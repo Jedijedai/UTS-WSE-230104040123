@@ -50,3 +50,11 @@ UTS-WSE-230104040123/
    npm install
    npm run dev
 http://localhost:3000
+| Method | Endpoint          | Deskripsi                  | Status Code     |
+| ------ | ----------------- | -------------------------- | --------------- |
+| GET    | `/api/orders`     | Ambil semua data order     | 200             |
+| GET    | `/api/orders/:id` | Ambil order berdasarkan ID | 200 / 404       |
+| POST   | `/api/orders`     | Tambah order baru          | 201 / 400       |
+| PUT    | `/api/orders/:id` | Update order               | 200 / 400 / 404 |
+| DELETE | `/api/orders/:id` | Hapus order                | 204 / 404       |
+| GET    | `/api/info`       | Info layanan API           | 200             |
